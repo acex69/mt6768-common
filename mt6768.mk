@@ -4,8 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+# APEX
+
+OVERRIDE_TARGET_FLATTEN_APEX := true
+
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
